@@ -1,0 +1,128 @@
+.s-doubt {
+  .container {
+    max-width: $container-xl;
+    margin: 0 auto;
+    padding: $gap-10 $gap-4;
+
+    @include responsive(l) {
+      padding: $gap-7 $gap-4;
+    }
+
+    > span {
+      text-align: center;
+
+      h2 {
+        color: $black-normal;
+        margin: $gap-2 $gap-0 $gap-5 $gap-2;
+      }
+
+      p {
+        color: $black-light;
+      }
+    }
+
+    .doubt-option {
+      width: 60%;
+      margin: $gap-7 auto 0px auto;
+
+      @include responsive(l) {
+        width: 100%;
+      }
+
+      > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: $gap-4 $gap-0;
+
+        article {
+          width: 100%;
+          cursor: pointer;
+
+          .accordion {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin: $gap-2 $gap-0;
+
+            div {
+              display: flex;
+              align-items: center;
+            }
+          }
+
+          .active {
+            .container-img {
+              transform: rotateX(180deg);
+            }
+
+            .icon-doubt {
+              width: 70px;
+              box-shadow: 0px 8px 25px rgba(229, 29, 55, 0.2);
+            }
+          }
+
+          .accordion-img {
+            transition: width 0.5s;
+            width: 32px;
+          }
+
+          .panel {
+            padding: $gap-3 $gap-2;
+            display: none;
+
+            overflow: hidden;
+
+            p {
+              line-height: 160%;
+              color: $black-light;
+            }
+          }
+          &:hover .icon-doubt {
+            width: 70px;
+            box-shadow: 0px 8px 25px rgba(229, 29, 55, 0.2);
+          }
+          &:hover .accordion-img {
+            width: 40px;
+          }
+        }
+
+        .icon-doubt {
+          margin: $gap-0 $gap-2;
+          padding: $gap-2;
+          border-radius: $gap-1;
+          transition: width 0.4s;
+          width: 64px;
+          background-color: white;
+          box-shadow: 0px 8px 25px rgba(229, 29, 55, 0.1);
+
+          @include responsive(l) {
+            display: none;
+          }
+        }
+
+        &:nth-child(2) {
+          border-top: 1px solid #ffe9ec;
+          border-bottom: 1px solid #ffe9ec;
+        }
+
+        span {
+          margin-left: $gap-2;
+          @include responsive(l) {
+            margin-left: $gap-0;
+          }
+          h4 {
+            color: $black-normal;
+            font-weight: 500;
+
+            margin-bottom: $gap-2;
+          }
+          p {
+            color: $black-light;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+footer {
+  background-color: white;
+
+  .container {
+    max-width: $container-xl;
+    margin: 0 auto;
+    padding: $gap-4 $gap-4;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include responsive(l) {
+      flex-wrap: wrap;
+      gap: $gap-3;
+      text-align: center;
+      justify-content: center;
+    }
+
+    > p {
+      span {
+        color: $primary-normal;
+        font-weight: 600;
+      }
+    }
+
+    > span {
+      display: flex;
+      align-items: center;
+
+      p {
+        
+        font-weight: 600;
+      }
+
+      img {
+        margin-left: $gap-1;
+      }
+    }
+  }
+}

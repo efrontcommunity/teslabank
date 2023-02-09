@@ -1,0 +1,97 @@
+.s-innovation {
+  background-color: $white-normal;
+
+  .container {
+    max-width: $container-xl;
+    margin: 0 auto;
+    padding: $gap-9 $gap-4;
+
+    @include responsive(l) {
+      padding: $gap-7 $gap-4;
+    }
+
+    h5 {
+      margin-bottom: $gap-2;
+    }
+
+    h2 {
+      color: $black-normal;
+      line-height: 140%;
+      span {
+        color: $primary-normal;
+      }
+    }
+
+    .container-cards-innovation {
+      margin-top: $gap-6;
+    }
+
+    .cards-innovation {
+      margin: $gap-4 $gap-0;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: $gap-3;
+
+      @include responsive(l) {
+        flex-wrap: wrap;
+      }
+
+      article {
+        background-color: white;
+      
+        border-radius: 4px;
+        width: 25%;
+        padding: $gap-4 $gap-3;
+
+        img {
+          transition: width 0.4s;
+          width: 36px;
+        }
+
+        &:hover {
+          img {
+            width: 42px;
+          }
+        }
+
+        div {
+          height: 50px;
+          display: flex;
+          align-items: center;
+        }
+
+        @include responsive(l) {
+          width: 100%;
+        }
+        h5 {
+          color: $black-normal;
+          font-weight: 500;
+
+          margin: $gap-3 $gap-0;
+        }
+        p {
+          color: $black-light;
+          margin-bottom: $gap-3;
+        }
+        a {
+          font-size: 1.6rem;
+          color: $primary-normal;
+          text-transform: uppercase;
+          font-weight: 600;
+          text-decoration: underline;
+          &:hover {
+            color: #cb162e;
+          }
+        }
+      }
+      .card-innovation-void {
+        visibility: hidden;
+        @include responsive(l) {
+          display: none;
+        }
+      }
+    }
+  }
+}

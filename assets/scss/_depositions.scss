@@ -1,0 +1,68 @@
+.s-depositions {
+  .container {
+    max-width: $container-xl;
+    margin: 0 auto;
+    padding: $gap-9 $gap-4;
+
+    @include responsive(l) {
+      padding: $gap-7 $gap-4;
+    }
+
+    h4 {
+      margin-bottom: $gap-2;
+      font-weight: 500;
+    }
+
+    h2 {
+      color: $black-normal;
+      line-height: 140%;
+      span {
+        font-weight: 400;
+      }
+    }
+    .depositions-people {
+      margin-top: $gap-8;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include responsive(l) {
+        flex-wrap: wrap;
+        gap: $gap-6;
+      }
+
+      div {
+        width: 30%;
+
+        &:hover {
+          h4 {
+            border-left: 5px solid $primary-normal;
+          }
+        }
+
+        @include responsive(l) {
+          width: 100%;
+        }
+
+        h4 {
+          transition: border 0.2s;
+          border-left: 3px solid $primary-normal;
+
+          text-transform: uppercase;
+          color: $black-normal;
+          font-weight: 500;
+
+          padding-left: $gap-2;
+        }
+
+        p {
+          margin-top: $gap-3;
+
+          line-height: 160%;
+          color: $black-light;
+        }
+      }
+    }
+  }
+}

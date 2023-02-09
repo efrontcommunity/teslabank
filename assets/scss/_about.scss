@@ -1,0 +1,149 @@
+.s-about {
+  .container {
+    max-width: $container-xl;
+    margin: 0 auto;
+    padding: $gap-10 $gap-4;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include responsive(l) {
+      padding: $gap-7 $gap-4;
+    }
+  }
+
+  .about-image-mobile {
+    @include responsive(l) {
+      display: none;
+    }
+    width: 50vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    .about-image-float {
+      width: $gap-8;
+      position: absolute;
+
+      padding: $gap-3;
+      border-radius: $gap-2;
+
+      background-color: white;
+      box-shadow: 0px 8px 25px rgba(229, 29, 55, 0.1);
+    }
+
+    .float-one {
+      top: -5%;
+      left: 16%;
+    }
+    .float-two {
+      top: 40%;
+      right: 16%;
+    }
+    .float-three {
+      top: 70%;
+      left: 16%;
+    }
+
+    .about-figure {
+      position: absolute;
+      background-color: #1d152c;
+      border-radius: 4px;
+      width: $gap-7;
+      height: $gap-7;
+    }
+
+    .icon-one {
+      animation: icon-move 2s ease 2.9s infinite alternate;
+    }
+    .icon-two {
+      animation: icon-move 2s ease 1.9s infinite alternate;
+    }
+    .icon-three {
+      animation: icon-move 2s ease 0.6s infinite alternate;
+    }
+
+    @keyframes icon-move {
+      0% {
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        transform: translate3d(10px, -40px, 0);
+      }
+    }
+  }
+
+  .about-content-mobile {
+    width: 50vw;
+
+    @include responsive(l) {
+      width: 100vw;
+    }
+
+    h2 {
+      color: $black-normal;
+      span {
+        color: $primary-dark;
+      }
+    }
+
+    > p {
+      color: $black-light;
+      margin-top: $gap-3;
+    }
+
+    .about-content-text {
+      margin-top: $gap-4;
+
+      div {
+        display: flex;
+        align-items: center;
+        padding: $gap-5 $gap-0;
+
+        img {
+          margin: $gap-0 $gap-2;
+          padding: $gap-2;
+          border-radius: $gap-1;
+          width: 64px;
+          transition: width 0.4s;
+          background-color: white;
+          box-shadow: 0px 8px 25px rgba(229, 29, 55, 0.1);
+
+          @include responsive(l) {
+            display: none;
+          }
+
+          &:hover {
+            width: 70px;
+            box-shadow: 0px 8px 25px rgba(229, 29, 55, 0.2);
+          }
+        }
+
+        &:nth-child(2) {
+          border-top: 1px solid #ffe9ec;
+          border-bottom: 1px solid #ffe9ec;
+        }
+
+        span {
+          margin-left: $gap-2;
+          @include responsive(l) {
+            margin-left: $gap-0;
+          }
+          h4 {
+            color: $black-normal;
+            font-weight: 500;
+
+            margin-bottom: $gap-2;
+          }
+          p {
+            color: $black-light;
+          }
+        }
+      }
+    }
+  }
+}

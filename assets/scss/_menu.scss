@@ -1,0 +1,243 @@
+header {
+  width: 100%;
+
+  transition: 0.8s ease;
+
+  position: absolute;
+  z-index: 999;
+}
+
+// Desktop
+.navbar {
+  max-width: $container-xl;
+  margin: 0 auto;
+  padding: $gap-4;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include responsive(s) {
+    display: none;
+  }
+}
+
+.overflow-body {
+  overflow-y: hidden;
+}
+
+// Mobile
+.mobile-navbar {
+  display: none;
+
+  div {
+    img {
+      width: 32px;
+    }
+  }
+
+  .animationTransform {
+    div:nth-child(1) {
+      transform: rotate(45deg) translate(3px, 7px);
+    }
+
+    div:nth-child(2) {
+      transform: rotate(-45deg) translate(-1px, -5px);
+    }
+  }
+
+  #menu-mobile-options.active-menu {
+    display: block;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  #menu-mobile-options {
+    animation: fadeIn 0.5s;
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: $white-normal;
+    height: 100vh;
+    z-index: 999;
+    transition-duration: 5s;
+    li {
+      text-align: center;
+      margin: $gap-5 $gap-0;
+      a {
+        color: $black-normal;
+        font-weight: 500;
+        font-size: 2.4rem;
+        padding: $gap-1 $gap-3;
+        &:hover {
+          color: $primary-normal;
+        }
+      }
+    }
+  }
+
+  #menu-mobile {
+    cursor: pointer;
+    padding: $gap-2;
+
+    div {
+      transition-duration: 0.5s;
+      margin: $gap-1 $gap-0;
+      width: 32px;
+      height: 2px;
+      background-color: $black-normal;
+    }
+  }
+
+  @include responsive(s) {
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $gap-2 $gap-4;
+  }
+}
+
+.navbar-item-1 {
+  display: flex;
+  align-items: center;
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  > ul {
+    display: flex;
+    align-items: center;
+
+    > li {
+      position: relative;
+      margin-left: $gap-5;
+      padding: $gap-1 $gap-0;
+      width: 180px;
+
+      &:hover {
+        ul {
+          display: inline-block;
+        }
+      }
+
+      ul {
+        display: none;
+        position: absolute;
+        top: 52px;
+        left: 0;
+
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0px 8px 25px rgba(229, 29, 55, 0.1);
+
+        li {
+          display: flex;
+          margin: $gap-2 $gap-0;
+        }
+
+        a {
+          color: $black-normal;
+          font-weight: 500;
+          font-size: 1.8rem;
+          padding: $gap-1 $gap-3;
+          &:hover {
+            color: $primary-normal;
+          }
+        }
+      }
+
+      > a {
+        display: inline-block;
+        padding: $gap-1 $gap-3;
+
+        position: relative;
+
+        color: $black-normal;
+        font-weight: 500;
+        font-size: 1.8rem;
+
+        &:hover {
+          color: $primary-normal;
+        }
+
+        &::after {
+          content: "";
+
+          position: absolute;
+          top: 24%;
+          right: -3px;
+
+          width: 12px;
+          height: 12px;
+
+          transform: rotate(45deg);
+          transition: 0.2s linear;
+
+          border-radius: 1px;
+          border-bottom: 2px solid $primary-normal;
+          border-right: 2px solid $primary-normal;
+        }
+
+        &:hover {
+          &::after {
+            top: 32%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar-item-2 {
+  display: flex;
+  align-items: center;
+  gap: $gap-2;
+
+  background-color: $white-normal;
+  padding: $gap-2 $gap-4;
+  border-radius: 6px;
+  transition: border-radius 0.4s ease;
+
+  img {
+    transition: width 0.4s ease;
+    width: 20px;
+  }
+
+  div {
+    height: 28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:hover {
+    border-radius: 16px;
+    img {
+      width: 24px;
+    }
+  }
+
+  h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $primary-normal;
+
+    @include responsive(l) {
+      color: $black-normal;
+    }
+  }
+}
