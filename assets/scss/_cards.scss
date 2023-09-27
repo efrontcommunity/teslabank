@@ -1,0 +1,88 @@
+#s-cards {
+  .container {
+    max-width: $container-xl;
+    margin: 0 auto;
+    padding: $gap-96 $gap-24;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    h3 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: $primary-normal;
+    }
+
+    h2 {
+      width: 50%;
+      color: $black-normal;
+      line-height: 120%;
+      font-size: 5.6rem;
+      font-weight: 500;
+      margin-bottom: 24px;
+
+      @include responsive(m) {
+        font-size: 3.2rem;
+        width: 100%;
+      }
+    }
+
+    p {
+      font-size: 2rem;
+      width: 65%;
+      line-height: 160%;
+
+      @include responsive(m) {
+        font-size: 1.8rem;
+        width: 100%;
+      }
+    }
+
+    img {
+      margin: 48px 0;
+    }
+
+    div {
+      display: flex;
+      align-items: stretch;
+      gap: 32px;
+
+      @include responsive(s) {
+        flex-wrap: wrap;
+        gap: 24px;
+      }
+
+      a {
+        border-radius: 6px;
+        padding: 12px 40px;
+        font-size: 2rem;
+        font-weight: 600;
+
+        @include responsive(s) {
+          width: 100%;
+        }
+      }
+
+      .open-account {
+        background-color: $primary-normal;
+        color: $white-normal;
+
+        &:hover {
+          background-color: $primary-hover;
+        }
+      }
+
+      .card-compare {
+        background-color: transparent;
+        border: 3px solid $white-dark;
+
+        &:hover {
+          background-color: $primary-normal;
+          color: $white-normal;
+          border: 3px solid transparent;
+        }
+      }
+    }
+  }
+}

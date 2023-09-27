@@ -1,17 +1,15 @@
 // Import partials
-
-@import "./spacing";
-@import "./colors";
-@import "./layout";
-@import "./typography";
+@import "./variables";
 @import "./reset";
 
 // Import sections
 @import "./menu";
-@import "./featured";
+@import "./home";
 @import "./about";
 @import "./innovation";
 @import "./depositions";
+@import "./cards";
 @import "./downloadapp";
-@import "./doubt";
+@import "./blog";
+@import "./faq";
 @import "./footer";

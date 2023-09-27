@@ -1,0 +1,93 @@
+// Colors
+
+// Brand
+$primary-normal: #eb3850;
+$primary-hover: #b6182d;
+$primary-opacity: #fff2f4;
+
+$primary-dark: #cb162e;
+$primary-light: #eb3850;
+
+$gradient-default: linear-gradient(220.94deg, #eb3850 14.43%, #cb162e 85.28%);
+
+// Neutral
+$black-normal: #1a191e;
+$black-dark: #353436;
+$black-light: #5f5f5f;
+
+$white-normal: #ffffff;
+$white-dark: #edeaef;
+$white-light: #f9f9f9;
+
+// Gray Scale
+$gray-1: #454446;
+$gray-2: #555456;
+$gray-3: #666566;
+$gray-4: #767576;
+$gray-5: #868587;
+$gray-6: #969597;
+$gray-7: #a6a6a7;
+
+// Auxiliary
+$red-normal: #eb3d3d;
+$red-dark: #d03333;
+$red-light: #f05454;
+
+$green-normal: #32d957;
+$green-dark: #28bb49;
+$green-light: #50e170;
+
+$yellow-normal: #ffce52;
+$yellow-dark: #d9b043;
+$yellow-light: #ffd76b;
+
+// Spacing
+$gap-0: 0px;
+$gap-8: 8px;
+$gap-16: 16px;
+$gap-24: 24px;
+$gap-32: 32px;
+$gap-40: 40px;
+$gap-48: 48px;
+$gap-56: 56px;
+$gap-64: 64px;
+$gap-72: 72px;
+$gap-80: 80px;
+$gap-88: 88px;
+$gap-96: 96px;
+
+// Container devices
+$container-xl: 1216px;
+$container-l: 1140px;
+$container-m: 688px;
+$container-s: 540px;
+
+// Mixins of media queries
+@mixin responsive($device) {
+  @if $device == xl {
+    // For resolutions upper than 1216px
+    @media screen and (min-width: $container-xl) {
+      @content;
+    }
+  } @else if $device == l {
+    // For resolutions between 1140px
+    @media screen and (max-width: $container-xl) {
+      @content;
+    }
+  } @else if $device == m {
+    // For resolutions between 960px
+    @media screen and (max-width: $container-l) {
+      @content;
+    }
+  } @else if $device == s {
+    // For resolutions less than 960px
+    @media screen and (max-width: $container-m) {
+      @content;
+    }
+  } @else if $device == xs {
+    // For resolutions less than 540px
+    @media screen and (max-width: $container-s) {
+      @content;
+    }
+  }
+}

@@ -9,82 +9,69 @@
     />
     <meta
       name="keywords"
-      content="sites, web, desenvolvimento, frontend, iuri silva, ui designer, programador, iuricode, front-end, website, tesla, teslabank, bank, site institucional"
+      content="frontend, iuri silva, iuricode, teslabank, bank, institucional"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#e51d37" />
-    <meta name="copyright" content="Iuri Silva 2022" />
+    <meta name="theme-color" content="#EB3850" />
+    <meta name="copyright" content="Iuri Silva" />
     <meta http-equiv="content-language" content="pt-br" />
-    <meta
-      property="og:image"
-      content="https://iuricode.com/assets/image/preview.png"
-    />
     <meta property="og:title" content="TeslaBank" />
-    <meta property="og:description" content="TeslaBank" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:description"
+      content="TeslaBank Banco 100% digital. Abrir uma conta digital nunca foi tão simples!"
+    />
+    <meta property="og:image" content="assets/image/preview.png" />
+
     <title>TeslaBank</title>
-    <link rel="icon" href="assets/image/logo-page.png" />
-    <link rel="apple-touch-icon" href="assets/image/logo-page.png" />
-    <link rel="canonical" href="https://iuricode.com/teslabank" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+
     <script src="assets/js/svg-inject.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar scrollReveal400">
+      <nav class="navbar">
         <div class="navbar-item-1">
-          <div class="logo">
-            <a href="#" rel="noopener">
-              <img
-                src="assets/icons/teslabank.svg"
-                alt="Logo TeslaBank"
-                width="40px"
-                height="40px"
-              />
-            </a>
-          </div>
+          <a href="#" rel="noopener">
+            <h1>teslabank.</h1>
+          </a>
+        </div>
+
+        <nav>
           <ul>
             <li>
-              <a href="#" rel="noopener">TeslaBank</a>
-              <ul>
-                <li><a href="#" rel="noopener">Newsletter</a></li>
-                <li><a href="#" rel="noopener">Blog</a></li>
-              </ul>
+              <a href="#" rel="noopener">Benefícios</a>
             </li>
             <li>
-              <a href="#" rel="noopener">Conta Digital</a>
-              <ul>
-                <li><a href="#" rel="noopener">Criar sua conta</a></li>
-                <li><a href="#" rel="noopener">Rendimentos</a></li>
-                <li><a href="#" rel="noopener">Taxas</a></li>
-              </ul>
+              <a href="#" rel="noopener">Conta digital</a>
+            </li>
+            <li>
+              <a href="#" rel="noopener">Suporte</a>
+            </li>
+            <li>
+              <a href="#" rel="noopener">Blog</a>
             </li>
           </ul>
-        </div>
-        <a href="#" class="navbar-item-2" rel="noopener">
-          <h4>Login</h4>
-          <div>
-            <img src="assets/icons/user.svg" alt="ícone login user" />
-          </div>
-        </a>
+        </nav>
+
+        <span>
+          <a href="#" class="navbar-item-2" rel="noopener">Entrar</a>
+          <a href="#" class="navbar-item-2 open-count" rel="noopener"
+            >Abrir conta</a
+          >
+        </span>
       </nav>
 
       <nav class="mobile-navbar">
         <div class="logo">
           <a href="#" rel="noopener">
-            <img
-              src="assets/icons/teslabank.svg"
-              alt="Logo TeslaBank"
-              width="24px"
-              height="24px"
-            />
+            <h1>teslabank.</h1>
           </a>
         </div>
 
@@ -94,24 +81,53 @@
         </div>
 
         <ul id="menu-mobile-options">
-          <li><a href="#" rel="noopener">Newsletter</a></li>
+          <li><a href="#" rel="noopener">Benefícios</a></li>
+          <li><a href="#" rel="noopener">Conta digita</a></li>
+          <li><a href="#" rel="noopener">Suporte</a></li>
           <li><a href="#" rel="noopener">Blog</a></li>
           <li><a href="#" rel="noopener">Criar sua conta</a></li>
-          <li><a href="#" rel="noopener">Rendimentos</a></li>
-          <li><a href="#" rel="noopener">Taxas</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="s-featured">
+      <section class="s-home">
         <div class="container">
-          <div class="featured-content-cta">
-            <div class="scrollReveal200">
-              <h1>TeslaBank<br />Banco 100% digital</h1>
-              <h3>Abrir uma conta digital nunca foi tão simples!</h3>
+          <div class="home-content-cta">
+            <div>
+              <h1>TeslaBank<br />seu banco digital.</h1>
+              <p class="home-description">
+                Com TeslaBank, você pode realizar transferências bancárias com
+                zero taxa e pagar suas contas.
+              </p>
 
-              <div class="featured-group-cta">
+              <div class="home-benefits">
+                <div>
+                  <span>
+                    <img src="assets/icons/right.svg" alt="Ícone" />
+                    <p>Transferência instantânea</p>
+                  </span>
+
+                  <span>
+                    <img src="assets/icons/right.svg" alt="Ícone" />
+                    <p>Sem taxas absurdas</p>
+                  </span>
+                </div>
+
+                <div>
+                  <span>
+                    <img src="assets/icons/right.svg" alt="Ícone" />
+                    <p>Pagamentos em todo o mundo</p>
+                  </span>
+
+                  <span>
+                    <img src="assets/icons/right.svg" alt="Ícone" />
+                    <p>100% pensando em você</p>
+                  </span>
+                </div>
+              </div>
+
+              <div class="home-group-cta">
                 <button>
                   <h4>Abrir uma conta</h4>
 
@@ -148,7 +164,7 @@
             </div>
           </div>
 
-          <div class="featured-cards">
+          <div class="home-cards">
             <img
               src="assets/image/cards.svg"
               alt="cartão TeslaBank frente"
@@ -162,32 +178,32 @@
 
       <section class="s-about">
         <div class="container">
-          <div class="about-image-mobile scrollReveal200">
+          <div class="about-image-mobile">
             <img
-              src="assets/image/smartphone.svg"
+              src="assets/image/smartphone.png"
               alt="smartphone"
-              width="320px"
-              height="320px"
+              width="380px"
+              height="800px"
             />
 
             <img
               src="assets/icons/checked.svg"
               alt="ícone confirmado"
-              class="about-image-float float-one icon-one scrollReveal600"
+              class="about-image-float float-one icon-one"
               width="96px"
               height="96px"
             />
             <img
               src="assets/icons/mouse-pointer.svg"
               alt="ícone cursor mouse"
-              class="about-image-float float-two icon-two scrollReveal600"
+              class="about-image-float float-two icon-two"
               width="96px"
               height="96px"
             />
             <img
               src="assets/icons/heart.svg"
               alt="ícone coração"
-              class="about-image-float float-three icon-three scrollReveal600"
+              class="about-image-float float-three icon-three"
               width="96px"
               height="96px"
             />
@@ -196,12 +212,11 @@
             <h2>Abra sua conta <span>gratuita</span>!</h2>
             <p>
               Envie e receba dinheiro de forma mais prática e rápida. Faça Pix,
-              TEDs e transferências com agendamento para todos os bancos sem
-              pagar nada.
+              TEDs e transferências para todos os bancos sem pagar nada.
             </p>
 
             <div class="about-content-text">
-              <div class="scrollReveal100">
+              <div>
                 <img
                   src="assets/icons/money.svg"
                   alt="ícone dinheiro"
@@ -210,11 +225,13 @@
                 />
                 <span>
                   <h4>Seu dinheiro rendendo mais</h4>
-                  <p>Rendem mais que a poupança e você resgata quando quiser</p>
+                  <p>
+                    Rendem mais que a poupança e você resgata quando quiser.
+                  </p>
                 </span>
               </div>
 
-              <div class="scrollReveal200">
+              <div>
                 <img
                   src="assets/icons/smartphone.svg"
                   alt="ícone celular"
@@ -225,12 +242,12 @@
                   <h4>Conta digital 100% grátis</h4>
                   <p>
                     Transferências, boletos de depósito e outros serviços
-                    gratuitos
+                    gratuitos.
                   </p>
                 </span>
               </div>
 
-              <div class="scrollReveal300">
+              <div>
                 <img
                   src="assets/icons/smile.svg"
                   alt="ícone feliz"
@@ -241,7 +258,7 @@
                   <h4>Cartão sem anuidade</h4>
                   <p>
                     Conta digital com cartão de crédito sem anuidade e sem
-                    complicação
+                    complicação.
                   </p>
                 </span>
               </div>
@@ -254,7 +271,7 @@
         <div class="container">
           <h6>#inovação</h6>
           <h2>Quais as vantagens<br />de usar <span>TeslaBank</span>?</h2>
-          <div class="container-cards-innovation scrollReveal300">
+          <div class="container-cards-innovation">
             <div class="cards-innovation">
               <article>
                 <div>
@@ -268,8 +285,9 @@
 
                 <h5>Cartão TeslaBank</h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aenean vitae leo lacinia.
+                  O Cartão TeslaBank é um cartão de crédito exclusivo para
+                  clientes da TeslaBank, uma instituição financeira líder em
+                  inovação e tecnologia.
                 </p>
                 <a href="#" rel="noopener">Veja as opções</a>
               </article>
@@ -286,10 +304,11 @@
 
                 <h5>Investimentos</h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aenean vitae leo lacinia.
+                  O cartão também oferece diversos benefícios, como descontos em
+                  taxas de corretagem, acesso a fundos de investimento e
+                  cashback.
                 </p>
-                <a href="#" rel="noopener">Leia mais</a>
+                <a href="#" rel="noopener">Conheça agora</a>
               </article>
 
               <article>
@@ -304,8 +323,9 @@
 
                 <h5>Atendimento 24h</h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aenean vitae leo lacinia.
+                  No TeslaBank, os usuários têm acesso a um atendimento ao
+                  cliente sempre disponível, 24 horas por dia, 7 dias por
+                  semana.
                 </p>
                 <a href="#" rel="noopener">Veja as opções</a>
               </article>
@@ -328,10 +348,11 @@
 
                 <h5>Segurança</h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aenean vitae leo lacinia.
+                  Os usuários contam com sistemas avançados de segurança, como
+                  verificação de identidade, monitoramento de transações e
+                  notificações de uso não autorizado.
                 </p>
-                <a href="#" rel="noopener">Leia mais</a>
+                <a href="#" rel="noopener">Conheça agora</a>
               </article>
 
               <article>
@@ -346,8 +367,9 @@
 
                 <h5>Sem taxas</h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aenean vitae leo lacinia.
+                  Com o cartão TeslaBank, os usuários podem aproveitar ao máximo
+                  seus recursos financeiros, sem se preocupar com custos
+                  adicionais ou taxas escondidas.
                 </p>
                 <a href="#" rel="noopener">Como funciona</a>
               </article>
@@ -364,8 +386,9 @@
 
                 <h5>Receba prêmios</h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aenean vitae leo lacinia.
+                  Os usuários têm acesso a um programa de recompensas que
+                  oferece pontos a cada transação realizada com o cartão, que
+                  podem ser trocados por diversos prêmios.
                 </p>
                 <a href="#" rel="noopener">Veja como</a>
               </article>
@@ -379,33 +402,56 @@
           <h6>#depoimentos</h6>
           <h2>
             TeslaBank fora das telinhas:<br />
-            <span>Veja o que falam sobre nosso serviço?</span>
+            <span>Veja o que estão falam sobre nós.</span>
           </h2>
 
           <div class="depositions-people">
-            <div class="scrollReveal200">
+            <div>
               <h4>Nikola Tesla</h4>
               <p>
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum scelerisque nisl quis viverra tincidunt. ”
+                Estou realmente impressionado com a qualidade do serviço do
+                TeslaBank. Desde que comecei a usá-lo, todas as minhas
+                transações financeiras ficaram mais fáceis e ágeis.
               </p>
             </div>
 
-            <div class="scrollReveal300">
+            <div>
               <h4>Steve Jobs</h4>
               <p>
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum scelerisque nisl quis viverra tincidunt. ”
+                O TeslaBank é uma verdadeira revolução no mundo financeiro. Eu
+                não preciso mais enfrentar filas em agências bancárias ou lidar
+                com taxas e tarifas absurdas.
               </p>
             </div>
 
-            <div class="scrollReveal400">
+            <div>
               <h4>Alan Turing</h4>
               <p>
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum scelerisque nisl quis viverra tincidunt. ”
+                Eu era bastante cético em relação ao banco digital, mas decidi
+                experimentar por curiosidade. Fiquei surpreso com a facilidade e
+                segurança das transações, além de todas as funcionalidades
+                exclusivas oferecidas.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-cards">
+        <div class="container">
+          <h3>#cartões</h3>
+          <h2>Cartão perfeito para suas necessidades.</h2>
+          <p>
+            Encontre o cartão perfeito para suas necessidades financeiras. Seja
+            para viagens ou compras do dia a dia, temos uma opção que se adapta
+            a você.
+          </p>
+
+          <img src="assets/image/cards-2.svg" alt="" />
+
+          <div>
+            <a href="#" class="open-account">Abrir uma conta</a>
+            <a href="#" class="card-compare">Comparar cartões</a>
           </div>
         </div>
       </section>
@@ -416,14 +462,13 @@
             <h3>
               Uma nova experiência<br />
               em <span>serviços financeiros</span>.<br />
-              Somos digital, somos TeslaBank.
             </h3>
-            <p class="scrollReveal200">
-              Donec venenatis at turpis at ornare. Pellentesque a<br />
-              quam vel dui lacinia dapibus in sit amet dolor.
+            <p>
+              Nossa abordagem inovadora e personalizada oferece uma experiência
+              única para atender às suas necessidades.
             </p>
             <div>
-              <a href="#" class="scrollReveal400" rel="noopener">
+              <a href="#" rel="noopener">
                 <div>
                   <img
                     src="assets/icons/apple-light.svg"
@@ -436,7 +481,7 @@
                 <p>Download via <br /><span>Apple Store</span></p>
               </a>
 
-              <a href="#" class="scrollReveal500" rel="noopener">
+              <a href="#" rel="noopener">
                 <div>
                   <img
                     src="assets/icons/playstore-light.svg"
@@ -451,7 +496,7 @@
             </div>
           </div>
           <div class="app-teslabank">
-            <div id="canvas-basic" class="scrollReveal600">
+            <div id="canvas-basic">
               <img
                 src="assets/icons/download-logo.svg"
                 alt="Logo da TeslaBank"
@@ -463,35 +508,74 @@
         </div>
       </section>
 
-      <section class="s-doubt">
+      <section class="s-blog">
+        <div class="container">
+          <div>
+            <h2>Blog</h2>
+
+            <a href="#">
+              <p>Todas as postagens</p>
+              <img src="assets/icons/arrow-2.svg" alt="" />
+            </a>
+          </div>
+
+          <div class="blog-container-post">
+            <article>
+              <img src="assets/image/1.png" alt="" />
+              <h3>Como começar a usar o TeslaBank para sua startup</h3>
+              <p>
+                Descubra como a sua startup pode se beneficiar dos serviços
+                financeiros do TeslaBank. Nesta postagem, apresentamos um guia
+                fácil para ajudá-lo a começar a usar o TeslaBank.
+              </p>
+            </article>
+
+            <article>
+              <img src="assets/image/2.png" alt="" />
+              <h3>10 coisas que ninguém te contou sobre o TeslaBank</h3>
+              <p>
+                Você está pensando em usar o TeslaBank para gerenciar suas
+                finanças pessoais? Antes de decidir, confira esta postagem para
+                descobrir 10 coisas que ninguém te contou sobre o TeslaBank.
+              </p>
+            </article>
+
+            <article>
+              <img src="assets/image/3.png" alt="" />
+              <h3>7 maneiras de melhorar seus hábitos de poupança</h3>
+              <p>
+                Você deseja economizar dinheiro, mas acha difícil manter bons
+                hábitos de poupança? Confira esta postagem para descobrir sete
+                maneiras eficazes de melhorar seus hábitos de poupança.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-faq">
         <div class="container">
           <span>
             <h6>#ajuda</h6>
             <h2>Ficou alguma dúvida?</h2>
-            <p>
-              Nullam ornare eu nisi fringilla consectetur. Suspendisse potenti.
-            </p>
+            <p>Confira nossa lista de perguntas frequentes que recebemos.</p>
           </span>
 
-          <div class="doubt-option">
-            <div class="scrollReveal300">
+          <div class="faq-option">
+            <div>
               <article>
                 <div class="accordion">
                   <div>
                     <img
                       src="assets/icons/smartphone.svg"
                       alt="ícone de celular"
-                      class="icon-doubt"
+                      class="icon-faq"
                       width="24px"
                       height="24px"
                     />
 
                     <span>
-                      <h4>Lorem ipsum dolor sit amet</h4>
-                      <p>
-                        Vestibulum faucibus risus eu mi volutpat, vel tristique
-                        dui rutrum.
-                      </p>
+                      <h4>Como posso abrir uma conta bancária?</h4>
                     </span>
                   </div>
 
@@ -517,24 +601,20 @@
               </article>
             </div>
 
-            <div class="scrollReveal400">
+            <div>
               <article>
                 <div class="accordion">
                   <div>
                     <img
                       src="assets/icons/smartphone.svg"
                       alt="ícone de celular"
-                      class="icon-doubt"
+                      class="icon-faq"
                       width="24px"
                       height="24px"
                     />
 
                     <span>
-                      <h4>Lorem ipsum dolor sit amet</h4>
-                      <p>
-                        Vestibulum faucibus risus eu mi volutpat, vel tristique
-                        dui rutrum.
-                      </p>
+                      <h4>Qual é o meu saldo atual?</h4>
                     </span>
                   </div>
 
@@ -560,24 +640,22 @@
               </article>
             </div>
 
-            <div class="scrollReveal500">
+            <div>
               <article>
                 <div class="accordion">
                   <div>
                     <img
                       src="assets/icons/smartphone.svg"
                       alt="ícone de celular"
-                      class="icon-doubt"
+                      class="icon-faq"
                       width="24px"
                       height="24px"
                     />
 
                     <span>
-                      <h4>Lorem ipsum dolor sit amet</h4>
-                      <p>
-                        Vestibulum faucibus risus eu mi volutpat, vel tristique
-                        dui rutrum.
-                      </p>
+                      <h4>
+                        Como faço para transferir dinheiro para outra conta?
+                      </h4>
                     </span>
                   </div>
 
@@ -610,7 +688,7 @@
     <footer>
       <div class="container">
         <p>
-          Copyright © 2023 <span>iuricode.com</span>. Todos os direitos
+          Copyright © 2022 <span>iuricode.com</span>. Todos os direitos
           reservados.
         </p>
 
@@ -621,7 +699,6 @@
       </div>
     </footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>

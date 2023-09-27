@@ -1,45 +1,60 @@
 .s-download-app {
-  background-color: $white-normal;
+  background-color: $primary-opacity;
 
   .container {
     max-width: $container-xl;
     margin: 0 auto;
-    padding: $gap-10 $gap-4;
-
+    padding: $gap-96 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     @include responsive(l) {
-      padding: $gap-7 $gap-4;
+      padding: $gap-72 $gap-24;
     }
 
     > div {
       h3 {
         color: $black-normal;
-        line-height: 140%;
+        line-height: 120%;
+        font-size: 4.8rem;
+        font-weight: 500;
+
+        @include responsive(l) {
+          font-size: 3.2em;
+        }
+
         span {
           color: $primary-normal;
         }
       }
-      > p {
-        color: $black-light;
 
-        margin: $gap-5 $gap-0;
+      > p {
+        color: $black-normal;
+        margin: $gap-24 $gap-0 $gap-56 $gap-0;
+        font-size: 2rem;
+        line-height: 150%;
+        width: 70%;
+
+        @include responsive(l) {
+          width: 100%;
+          font-size: 1.8rem;
+        }
       }
+
       div {
         display: flex;
         align-items: center;
-        gap: $gap-4;
+        gap: $gap-32;
+
         @include responsive(l) {
           flex-wrap: wrap;
         }
+
         a {
           background-color: $black-dark;
-
-          padding: $gap-1 $gap-4;
+          padding: $gap-8 $gap-32;
           border-radius: 4px;
-
           display: flex;
           align-items: center;
 
@@ -69,12 +84,12 @@
             color: $white-dark;
             font-weight: 300;
             line-height: 160%;
-
-            margin-left: $gap-2;
+            margin-left: $gap-16;
+            font-size: 1.6rem;
 
             span {
               font-weight: 600;
-              font-size: 1.6rem;
+              font-size: 2rem;
             }
           }
         }
@@ -85,15 +100,14 @@
         width: 380px;
         height: 380px;
         border-radius: 56px;
-        background: $gradient-default;
-        animation: gradient 8s ease infinite;
-        background-size: 400% 400%;
+        background: $primary-normal;
+
         display: flex;
         align-items: center;
         justify-content: center;
 
         img {
-          animation: imgHeart 4s ease infinite;
+          animation: imgHeart 2s ease infinite;
           width: 180px;
         }
       }
@@ -102,9 +116,11 @@
         0% {
           width: 180px;
         }
+
         50% {
           width: 200px;
         }
+
         100% {
           width: 180px;
         }
@@ -114,9 +130,11 @@
         0% {
           background-position: 0% 50%;
         }
+
         50% {
           background-position: 100% 50%;
         }
+
         100% {
           background-position: 0% 50%;
         }

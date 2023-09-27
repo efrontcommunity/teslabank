@@ -1,8 +1,6 @@
 header {
   width: 100%;
-
   transition: 0.8s ease;
-
   position: absolute;
   z-index: 999;
 }
@@ -11,13 +9,12 @@ header {
 .navbar {
   max-width: $container-xl;
   margin: 0 auto;
-  padding: $gap-4;
-
+  padding: $gap-32;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  @include responsive(s) {
+  @include responsive(m) {
     display: none;
   }
 }
@@ -26,14 +23,73 @@ header {
   overflow-y: hidden;
 }
 
+.navbar-item-1 {
+  display: flex;
+  align-items: center;
+
+  h1 {
+    font-size: 3.2rem;
+    color: $primary-normal;
+  }
+}
+
+nav {
+  > ul {
+    display: flex;
+    align-items: center;
+
+    > li {
+      position: relative;
+      margin-left: $gap-16;
+      padding: $gap-8 $gap-0;
+      width: auto;
+
+      &:hover {
+        ul {
+          display: inline-block;
+        }
+      }
+
+      a {
+        display: inline-block;
+        padding: $gap-8 12px;
+        position: relative;
+        color: $black-normal;
+        font-weight: 600;
+        font-size: 1.8rem;
+
+        &:hover {
+          color: $primary-normal;
+        }
+      }
+    }
+  }
+}
+
+.navbar-item-2 {
+  padding: 12px 32px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: $primary-normal;
+}
+
+.open-count {
+  background-color: $primary-normal;
+  color: $white-normal;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+}
+
 // Mobile
 .mobile-navbar {
   display: none;
 
-  div {
-    img {
-      width: 32px;
-    }
+  h1 {
+    font-size: 3.2rem;
+    color: $primary-normal;
   }
 
   .animationTransform {
@@ -54,6 +110,7 @@ header {
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
@@ -70,14 +127,17 @@ header {
     height: 100vh;
     z-index: 999;
     transition-duration: 5s;
+
     li {
       text-align: center;
-      margin: $gap-5 $gap-0;
+      margin: $gap-40 $gap-0;
+
       a {
         color: $black-normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 2.4rem;
-        padding: $gap-1 $gap-3;
+        padding: $gap-8 $gap-24;
+
         &:hover {
           color: $primary-normal;
         }
@@ -87,157 +147,23 @@ header {
 
   #menu-mobile {
     cursor: pointer;
-    padding: $gap-2;
+    padding: $gap-16;
 
     div {
       transition-duration: 0.5s;
-      margin: $gap-1 $gap-0;
+      margin: $gap-8 $gap-0;
       width: 32px;
       height: 2px;
       background-color: $black-normal;
     }
   }
 
-  @include responsive(s) {
+  @include responsive(m) {
     display: inline-block;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: $gap-2 $gap-4;
-  }
-}
-
-.navbar-item-1 {
-  display: flex;
-  align-items: center;
-
-  .logo {
-    width: 40px;
-    height: 40px;
-  }
-
-  > ul {
-    display: flex;
-    align-items: center;
-
-    > li {
-      position: relative;
-      margin-left: $gap-5;
-      padding: $gap-1 $gap-0;
-      width: 180px;
-
-      &:hover {
-        ul {
-          display: inline-block;
-        }
-      }
-
-      ul {
-        display: none;
-        position: absolute;
-        top: 52px;
-        left: 0;
-
-        background-color: #fff;
-        border-radius: 12px;
-        box-shadow: 0px 8px 25px rgba(229, 29, 55, 0.1);
-
-        li {
-          display: flex;
-          margin: $gap-2 $gap-0;
-        }
-
-        a {
-          color: $black-normal;
-          font-weight: 500;
-          font-size: 1.8rem;
-          padding: $gap-1 $gap-3;
-          &:hover {
-            color: $primary-normal;
-          }
-        }
-      }
-
-      > a {
-        display: inline-block;
-        padding: $gap-1 $gap-3;
-
-        position: relative;
-
-        color: $black-normal;
-        font-weight: 500;
-        font-size: 1.8rem;
-
-        &:hover {
-          color: $primary-normal;
-        }
-
-        &::after {
-          content: "";
-
-          position: absolute;
-          top: 24%;
-          right: -3px;
-
-          width: 12px;
-          height: 12px;
-
-          transform: rotate(45deg);
-          transition: 0.2s linear;
-
-          border-radius: 1px;
-          border-bottom: 2px solid $primary-normal;
-          border-right: 2px solid $primary-normal;
-        }
-
-        &:hover {
-          &::after {
-            top: 32%;
-          }
-        }
-      }
-    }
-  }
-}
-
-.navbar-item-2 {
-  display: flex;
-  align-items: center;
-  gap: $gap-2;
-
-  background-color: $white-normal;
-  padding: $gap-2 $gap-4;
-  border-radius: 6px;
-  transition: border-radius 0.4s ease;
-
-  img {
-    transition: width 0.4s ease;
-    width: 20px;
-  }
-
-  div {
-    height: 28px;
-    width: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &:hover {
-    border-radius: 16px;
-    img {
-      width: 24px;
-    }
-  }
-
-  h4 {
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: $primary-normal;
-
-    @include responsive(l) {
-      color: $black-normal;
-    }
+    padding: $gap-16 $gap-32;
   }
 }

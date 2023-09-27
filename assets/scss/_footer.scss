@@ -1,25 +1,27 @@
 footer {
-  background-color: white;
+  background-color: $white-light;
 
   .container {
     max-width: $container-xl;
     margin: 0 auto;
-    padding: $gap-4 $gap-4;
-
+    padding: $gap-32 $gap-24;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     @include responsive(l) {
       flex-wrap: wrap;
-      gap: $gap-3;
+      gap: $gap-24;
       text-align: center;
       justify-content: center;
     }
 
     > p {
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 160%;
+
       span {
-        color: $primary-normal;
         font-weight: 600;
       }
     }
@@ -28,13 +30,18 @@ footer {
       display: flex;
       align-items: center;
 
+      @include responsive(s) {
+        display: none;
+      }
+
       p {
-        
+        font-size: 1.8rem;
         font-weight: 600;
+        color: $primary-normal;
       }
 
       img {
-        margin-left: $gap-1;
+        margin-left: $gap-16;
       }
     }
   }

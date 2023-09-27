@@ -6,7 +6,6 @@
 
 <h4 align="center"><a href="https://www.iuricode.com/teslabank">Clique para visitar o projeto</a></h4>
 
-
 ---
 
 ## 💼 Tecnologias utilizadas
@@ -16,7 +15,6 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 - HTML;
 - Sass;
 - JavaScript;
-- ScrollReveal;
 - SVG Inject;
 
 ---

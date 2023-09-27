@@ -4,26 +4,33 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
 }
+
 ul,
 ol {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
-  @include typeface-body(p2, desktop);
   color: $black-normal;
 }
+
 img,
 svg {
   max-width: 100%;
   height: auto;
   display: block;
 }
-p,
+
+p {
+  margin: 0;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -31,18 +38,30 @@ h4,
 h5,
 h6 {
   margin: 0;
+  font-family: "DM Sans", sans-serif;
 }
+
+h6 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: $primary-dark;
+  margin-bottom: $gap-8;
+}
+
 button,
 input {
   border: 0;
+
   &:focus {
     border: 0;
   }
 }
+
 body {
-  background-color: $white-light;
+  background-color: $white-normal;
   overflow-x: hidden;
 }
+
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
