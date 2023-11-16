@@ -67,9 +67,11 @@
       .open-account {
         background-color: $primary-normal;
         color: $white-normal;
+        border: 3px solid $primary-normal;
 
         &:hover {
           background-color: $primary-hover;
+          border: 3px solid $primary-hover;
         }
       }
 
